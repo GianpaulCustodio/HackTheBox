@@ -1,0 +1,6 @@
+pl
+tar
+sh
+c
+txt
+cgi
