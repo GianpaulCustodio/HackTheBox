@@ -1,0 +1,23 @@
+# Nmap 7.80 scan initiated Mon Aug  9 12:56:04 2021 as: nmap --script http-enum -p80 -oN webVulnScan 10.10.10.150
+Nmap scan report for 10.10.10.150
+Host is up (0.29s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /administrator/: Possible admin folder
+|   /administrator/index.php: Possible admin folder
+|   /administrator/manifests/files/joomla.xml: Joomla version 3.8.8
+|   /language/en-GB/en-GB.xml: Joomla version 3.8.8
+|   /htaccess.txt: Joomla!
+|   /README.txt: Interesting, a readme.
+|   /bin/: Potentially interesting folder
+|   /cache/: Potentially interesting folder
+|   /images/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|   /libraries/: Potentially interesting folder
+|   /modules/: Potentially interesting folder
+|   /templates/: Potentially interesting folder
+|_  /tmp/: Potentially interesting folder
+
+# Nmap done at Mon Aug  9 12:57:02 2021 -- 1 IP address (1 host up) scanned in 57.82 seconds

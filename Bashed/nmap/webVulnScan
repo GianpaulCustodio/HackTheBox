@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Fri Jul 30 12:32:32 2021 as: nmap --script "vuln and safe" -p443 -oN webVulnScan 10.10.10.68
+Nmap scan report for 10.10.10.68
+Host is up (0.27s latency).
+
+PORT    STATE  SERVICE
+443/tcp closed https
+
+# Nmap done at Fri Jul 30 12:32:33 2021 -- 1 IP address (1 host up) scanned in 1.28 seconds
