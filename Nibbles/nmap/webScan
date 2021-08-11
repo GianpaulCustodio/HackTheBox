@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Wed Aug 11 12:38:20 2021 as: nmap --script http-enum --script-args http-enum.basepath=nibbleblog/ -p80 -oN webScan 10.10.10.75
+Nmap scan report for 10.10.10.75
+Host is up (0.34s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /nibbleblog/admin.php: Possible admin folder
+|   /nibbleblog/admin/: Possible admin folder
+|   /nibbleblog/README: Interesting, a readme.
+|   /nibbleblog/content/: Potentially interesting directory w/ listing on 'apache/2.4.18 (ubuntu)'
+|_  /nibbleblog/themes/: Potentially interesting directory w/ listing on 'apache/2.4.18 (ubuntu)'
+
+# Nmap done at Wed Aug 11 12:39:20 2021 -- 1 IP address (1 host up) scanned in 59.74 seconds
